@@ -1,12 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
 import Header from './Components/header';
 import Books from './Components/books';
-import Categories from './Components/Categories';
-import './index.css';
+import Categories from './Components/categories';
 
 function App() {
   return (
-    // Code Here
     <>
       <Header />
       <Routes>
