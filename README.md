@@ -2,7 +2,8 @@
   Book Store
 ## Built With
 
-- React 
+- React
+- Redux
 
 ## Live Demo (if available)
 Live link not avaible yet
