@@ -16,6 +16,11 @@ body {
   margin: 10px;
 }
 
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
 ul {
   display: flex;
   padding: 10px;
@@ -23,7 +28,36 @@ ul {
   gap: 10px;
 }
 
+.display-book {
+  display: flex;
+  flex-direction: column;
+}
+
+.books-list {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+}
+
+#booklist-display {
+  display: flex;
+  gap: 5px;
+}
+
 a {
   text-decoration: none;
   color: blue;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input,
+.input-submit {
+  height: 2rem;
+  width: 150px;
 }
