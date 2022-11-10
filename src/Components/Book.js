@@ -10,10 +10,10 @@ const Book = (props) => {
   return (
     <li className="books-list">
       <div id="booklist-display">
-        <h2>{book.title}</h2>
-        <h2>{book.author}</h2>
+        <h3>{book.title}</h3>
+        <h3>{book.author}</h3>
       </div>
-      <button type="button" onClick={() => dispatch(remove(book.id))}>Delete</button>
+      <button type="button" onClick={() => dispatch(remove(book.item_id))}>Delete</button>
     </li>
 
   );
