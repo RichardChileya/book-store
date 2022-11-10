@@ -10,7 +10,9 @@ const Add = () => {
   });
 
   const dispatch = useDispatch();
-  const getBook = (title, author) => ({ id: uuidv4(), title, author });
+  const getBook = (title, author) => ({
+    item_id: uuidv4(), title, author, category: 'Fiction',
+  });
 
   const onChange = (e) => {
     setInputText({
