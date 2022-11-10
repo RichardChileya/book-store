@@ -6,7 +6,6 @@ import './index.css';
 
 function App() {
   return (
-  //  Code here
     <>
       <Header />
       <Routes>
