@@ -8,7 +8,7 @@ const DisplayBooks = () => {
   return (
     <ul className="display-book">
       {books.map((book) => (
-        <Book book={book} key={book.id} />
+        <Book book={book} key={book.item_id} />
       ))}
     </ul>
   );

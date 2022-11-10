@@ -1,20 +1,54 @@
-import { v4 as uuidv4 } from 'uuid';
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import apiKey from '../../BookStoreApi';
 
 const ADD = 'bookstore/books/ADD';
 const REMOVE = 'bookstore/books/REMOVE';
+const FETCH = 'bookstore/books/FETCH';
 
-const initialState = [
-  { id: uuidv4(), title: 'Book 1', author: 'React' },
-  { id: uuidv4(), title: 'Book 2', author: 'Redux' },
-];
+const initialState = [];
 
 export default (state = initialState, action) => {
   switch (action.type) {
+    case FETCH: return [...action.payload];
     case ADD: return [...state, action.payload];
-    case REMOVE: return state.filter((f) => f.id !== action.payload);
+    case REMOVE: return state.filter((f) => f.item_id !== action.payload);
     default: return state;
   }
 };
 
-export const add = (payload) => ({ type: ADD, payload });
-export const remove = (payload) => ({ type: REMOVE, payload });
+export const fetchBooks = createAsyncThunk('fetchbooks/get', async (_, thunkApi) => {
+  try {
+    const res = await apiKey.getAll();
+
+    if (res.data) {
+      thunkApi.dispatch({
+        type: FETCH,
+        payload: Object.entries(res.data).map(([k, v]) => ({ item_id: k, ...v[0] })),
+      });
+    }
+  } catch (err) {
+    Promise.reject(err);
+  }
+});
+
+export const add = (payload) => async (dispatch) => {
+  try {
+    const res = await apiKey.update(payload);
+
+    dispatch({ type: ADD, payload });
+    return Promise.resolve(res.data);
+  } catch (err) {
+    return Promise.reject(err);
+  }
+};
+
+export const remove = (payload) => async (dispatch) => {
+  try {
+    const res = await apiKey.remove(payload);
+
+    dispatch({ type: REMOVE, payload });
+    return Promise.resolve(res.date);
+  } catch (err) {
+    return Promise.reject(err);
+  }
+};
