@@ -2,23 +2,45 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'RobotoSlab', sans-serif;
 }
 
 body {
-  background-color: antiquewhite;
-  padding: 10px;
+  background-color: #eeebeb;
 }
 
 .nav-container {
+  padding-top: 20px;
   display: flex;
+  padding-left: 4.25rem;
+  color: #0290ff;
   justify-content: space-between;
-  margin: 10px;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 20px;
+  height: 5rem;
+}
+
+.header {
+  display: flex;
+}
+
+.login-icon {
+  display: flex;
+  justify-self: flex-end;
+  margin: 1rem 3rem 2rem;
+  font-size: 30px;
+  color: #0290ff;
+  background-color: #fff;
+  border: 1px solid #7c7c7c;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .nav-list {
   display: flex;
   justify-content: flex-end;
+  align-self: baseline;
 }
 
 ul {
@@ -35,29 +57,136 @@ ul {
 
 .books-list {
   display: flex;
-  width: 250px;
-  justify-content: space-between;
+  height: 7rem;
+  width: 70%;
+  background-color: #fff;
+  padding: 5px 1.688rem;
+  margin-left: 4.25rem;
+}
+
+.left-block {
+  display: flex;
+  width: 30rem;
+  flex-direction: column;
+  height: 20rem;
+}
+
+.right-block {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10% 1rem;
 }
 
 #booklist-display {
   display: flex;
+  flex-direction: column;
   gap: 5px;
 }
 
 a {
   text-decoration: none;
-  color: blue;
-  font-size: 20px;
+  color: #121212;
+  opacity: 50%;
+  font-size: 17px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 5.25rem;
+  margin-top: 20px;
 }
 
 form {
   display: flex;
-  flex-direction: column;
   gap: 10px;
 }
 
-input,
+input {
+  width: 19.5rem;
+  height: 2.813rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  padding: 10px;
+}
+
 .input-submit {
-  height: 2rem;
-  width: 150px;
+  color: #fff;
+  width: 10.5rem;
+  height: 2.713rem;
+  border-radius: 3px;
+  border: none;
+  background-color: #0290ff;
+}
+
+.author {
+  color: #4386bf;
+}
+
+.buttons-div {
+  padding-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.buttons {
+  text-decoration: none;
+  color: #4386bf;
+  border: none;
+  background-color: #fff;
+}
+
+.progress-bar {
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  margin: 10px;
+  gap: 10px;
+}
+
+.chapter {
+  color: #121212;
+  opacity: 50%;
+}
+
+.chapter-info {
+  font-size: 14px;
+}
+
+span {
+  align-self: center;
+}
+
+.ant-progress-circle-path {
+  color: #7c7c7c;
+}
+
+.ant-progress-text {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  font-size: 15px;
+}
+
+.update-progress {
+  color: #fff;
+  width: 11.5rem;
+  height: 2.063rem;
+  border-radius: 3px;
+  border: none;
+  margin-top: 20px;
+  background-color: #0290ff;
+}
+
+.dividor {
+  opacity: 50%;
+  height: 70%;
+  align-self: center;
+}
+
+.form-dividor {
+  opacity: 50%;
+  width: 72.6%;
 }
