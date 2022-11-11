@@ -24,10 +24,15 @@ const Book = (props) => {
           <button type="button" className="buttons">Edit</button>
         </div>
       </div>
-      <p className="progress-bar">
-        <Progress type="circle" percent={85} strokeColor="#307bbe" strokelinecap="round" width={60} fill-opacity="1" />
-        <span>Completed</span>
-      </p>
+      {/* Progress Bar */}
+      <div className="progress-bar">
+        <Progress type="circle" percent={75} strokeColor="#0290ff" width={50} />
+        <div className="progress">
+          <span id="percent">75%</span>
+          <span id="completed">Completed</span>
+        </div>
+        <circle cx="80" cy="80" r="70" strokeLinecap="round" />
+      </div>
       <hr className="dividor" />
       <div className="right-block">
         <h3 className="chapter">Current Chapter</h3>
