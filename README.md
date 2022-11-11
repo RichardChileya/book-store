@@ -1,9 +1,12 @@
 ## Project Title: 
   Book Store
+## Summary: 
+This is a simple Book Store CMS project implemented with React.JS, Redux was used to set reduces and actions and API integretion through axios.
 ## Built With
 
 - React
 - Redux
+- Axios
 
 ## Live Demo (if available)
 Live link not avaible yet
