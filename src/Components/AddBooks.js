@@ -38,7 +38,7 @@ const Add = () => {
   return (
     <div id="form">
       <hr className="form-dividor" />
-      <h2>ADD NEW BOOK</h2>
+      <h2 className="form-header">ADD NEW BOOK</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
