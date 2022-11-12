@@ -1,31 +1,72 @@
 ## Project Title: 
   Book Store
+## Summary: 
+This is a simple Book Store CMS project implemented with React.JS, Redux was used to set reduces and actions and API integretion through axios.
 ## Built With
 
 - React
 - Redux
+- Axios
 
 ## Live Demo (if available)
 Live link not avaible yet
 
-## Getting Started
+## Built With
 
-**To use this repositpry you will need to Clone this repository to your machine. A .gitignore file is already created to ignore any file that is irrelevant, especially your node.js file. A linter is already set up to help you check for errors in your codes**
+- html
+- css
+- webpack
+- react.js
+- Redux
 
-To get a local copy up and running follow these simple example steps.
+## Live Demo
+
+[**See Project 🚀**]();
+
+## Get Started
+
+To get the content of this project locally you need to run the following commands in your terminal.
 
 ### Prerequisites
-**Tap on the code option in the repo, then you copy the link to the repo provided**
+- IDE(code editor) like: **Vscode**, **Sublime**, etc. 
+- [Git](https://www.linode.com/docs/guides/how-to-install-git-on-linux-mac-and-windows/)
+
 ### Setup
-**Open your git bash or your IDE terminal then use the git command to clone it to your machine**
+1. Download the **Zip** file or clone the repo with:
+```bash
+git clone https://github.com/RichardChileya/book-store.git
+```
+3. To access cloned directory run:
+```bash
+cd bookstore
+```
+3. Open it with the live server
+
 ### Install
-**The folder will then be installed in your machine.**
-npm start - To start the App
-### Usage
-**You can edit codes and make changes, dont forget to give credits to me**
-npm install - To install all dependancies
-### Run tests
-**Linters are already setup in the repo for error checks**
+> To install linters and other project's dependencies run:
+```bash
+npm install
+```
+## Run Test for Linters
+
+For tracking linter errors locally you need to follow these steps:
+
+1. For tracking linter errors in HTML files run:
+```bash 
+npx hint .
+```
+
+2. For tracking linter errors in CSS or SASS files run:
+
+```bash
+npx stylelint "\*_/_.{css,scss}"
+```
+
+3. For tracking linter errors in JavaScript files run:
+
+```bash
+npx eslint .
+```
 
 ## Authors
 

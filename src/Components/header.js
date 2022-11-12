@@ -1,13 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { UserOutlined } from '@ant-design/icons';
 
 const Header = () => (
   <div className="nav-container">
-    <h1>Book Store</h1>
-    <ul className="nav-list">
-      <li><NavLink to="/">Books</NavLink></li>
-      <li><NavLink to="/categories">Categories</NavLink></li>
-    </ul>
+    <div className="header">
+      <h1>Book Store CMS</h1>
+      <ul className="nav-list">
+        <li><NavLink to="/">BOOKS</NavLink></li>
+        <li><NavLink to="/categories">CATEGORIES</NavLink></li>
+      </ul>
+    </div>
+
+    <UserOutlined className="login-icon" />
   </div>
 );
 
